@@ -7,8 +7,3 @@ import { provideClientHydration } from '@angular/platform-browser';
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration()]
 };
-
-export const environment = {
-  production: false,
-  apiUrl: 'https://cinephile-dc1b75a885d0.herokuapp.com/' 
-};
